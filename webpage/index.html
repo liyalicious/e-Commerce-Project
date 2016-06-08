@@ -1,0 +1,243 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<head>
+		<title>Monthly Moonshine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+
+				<!-- Logo -->
+					<h1 id="logo">Monthly Moonshine</h1>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro">Home</a></li>
+							<li><a href="#one">About Us</a></li>
+							<li><a href="#options">Alcohol Options</a></li>
+							<li><a href="#signup"><strong>Sign Up<Strong></a></li>
+						</ul>
+					</nav>
+
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content container 75%">
+					<header>
+						<h2>Monthly Moonshine</h2>
+					</header>
+					<p><font size = "6">A new alcohol experience.</font></p>
+					<footer>
+						<a href="#one" class="button style2 down">More</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>What We Do</h2>
+					</header>
+					<p>We are an alcohol carrier that works with breweries all around the country to bring you a new experience with alcohol. With a low monthly price you will be shipped one new kind of craft beer, liquor or wine that is carefully chosen by our providers to your home once a month. This means you do not have to choose between variety, tastes and price when it comes to alcohol.</p>
+				</div>
+				<a href="#options" class="button style2 down anchored">Next</a>
+			</section>
+
+		<!-- Two -->
+			<!--<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Who I Am</h2>
+					</header>
+					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
+					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
+					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+				</div>
+				<a href="#work" class="button style2 down anchored">Next</a>
+			</section>-->
+
+		<!-- Work -->
+			<section id="options" class="main style1 fullscreen">
+				<div class="content container">
+					<header>
+						<h2><font size="11">Alcohol Options</font></h2>
+						<h3>Here's what we offer. Click on picture to see detailed description and prices.</h3> <a href="#signup">Sign Up and Pay</a>
+					</header>
+
+					<!-- Lightbox Gallery  -->
+						<div class="container 75% gallery">
+							<div class="row 0% images">
+
+								<div class="6u 12u(mobile)"><a href="images/craftbeer.jpg" class="image fit from-left"><img src="images/craftbeer.jpg" title="Craft Beer $20/month" alt="" /></a></div>
+
+								<div class="6u 12u(mobile)"><a href="images/wines.jpg" class="image fit from-right"><img src="images/wines.jpg" title="Wines $25/month" alt="" /></a></div>
+							<div class="row 0% images">
+								<div class="6u 12u(mobile)"><a href="images/liquor.jpg" class="image fit from-left"><img src="images/liquor.jpg" title="Liquor $30/month" alt="" /></a></div>
+
+								<div class="6u 12u(mobile)"><a href="images/BeerWineLiquor.jpg" class="image fit from-right"><img src="images/BeerWineLiquor.jpg" title="A Mix Of Everything $40/month" alt="" /></a></div>
+
+							</div>
+							</div>
+						</div>
+
+				</div>
+			</section>
+
+		<!-- Contact -->
+			<section id="signup" class="main style3 secondary">
+				<div class="content container">
+					<header>
+						<h2>Sign Up</h2>
+						<p>Get started on Monthly Moonshine!</p>
+						<p><font size="2"><i>*You must be 21 or older to register. ID required.</i></font></p>
+					</header>
+					<div class="box container 75%">
+
+					<!-- Contact Form -->
+							<form method="post" action="action.php" id="payment-form">
+								<div class="row 50%">
+
+									<div class="6u 12u(mobile)"><input type="text" name="firstname" pattern="[A-Za-z]{2,}" required title="Please input at least two letters. No numbers or special characters. " placeholder="First Name" /></div>
+									<div class="6u 12u(mobile)"><input type="text" name="lastname" pattern="[A-Za-z]{2,}" required title="Please input at least two letters. No numbers or special characters. " required placeholder="Last Name" /></div>
+									<div class="6u 12u(mobile)"><input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required placeholder="Email" /></div>
+									<div class="6u 12u(mobile)"><input type="text" name="phone" required pattern="[0-9]{10}" title="Please input 10 digits telephone number" placeholder="Phone Number(xxxxxxxxxx)" /></div>
+									<div class="6u 12u(mobile)"><input type="text" name="bday" required pattern="[0-9/]{10}" title="Please follow the pattern MM/DD/YYYY" placeholder="Birthday (MM/DD/YYYY)" /></div>
+									<div class="6u 12u(mobile)"><input type="checkbox" name="age" required value="21"> I am 21 years or older. </div>
+
+									<div class="12u 12u(mobile)"><input type="text" name="address" required title="We need your address to ship the alcohol to your home." placeholder="Street Address" /></div>
+
+									<div class="4u 12u(mobile)"><input type="text" name="city" required placeholder="City" /></div>
+									<div class="4u 12u(mobile)"><input type="text" name="state" required placeholder="State" /></div>
+									<div class="4u 12u(mobile)"><input type="text" name="zipcode" required pattern="[0-9]{5}" title="Please input 5 digits zipcode" placeholder="Zipcode" /></div>
+
+
+									<div class="12u 12u(mobile)"><p>Credit Card Information</p></div>
+									
+									<div class="12u 12u(mobile)"><input type="text" data-stripe="number"name="cardnumber" pattern="[0-9]{16}" required title="Please input 16 digits credit card number. " placeholder="Card Number" /></div>
+
+									<div class="6u 12u(mobile)"><input type="text" name="cvc" data-stripe="cvc" pattern="[0-9]{3}" required title="Please input 3 digits CVC number. " placeholder="CVC" /></div>
+
+									<div class="3u 12u(mobile)"><input type="text" data-stripe="exp-month" name="expiration_month"  required title="Please input expiration date following the pattern MM/YY. " placeholder="MM" required pattern= "[0-9]{2}"/></div>
+
+									<div class="3u 12u(mobile)"><input type="text" data-stripe="exp-year" name="expiration_year"  required title="Please input expiration date following the pattern MM/YY. " placeholder="YYYY" required pattern= "[0-9]{4}"/></div>
+									
+
+
+									
+									<div class="12u 12u(mobile)"><p>Choose the alcohol you're paying for: </p></div>
+									<div class="6u 12u(mobile)"><input type="checkbox" name="cb"> Craft Beer ($20) </div>
+									<div class="6u 12u(mobile)"><input type="checkbox" name="w"> Wines ($25)</div>
+									<div class="6u 12u(mobile)"><input type="checkbox" name="lq"> Liquor ($30)</div>
+									<div class="6u 12u(mobile)"><input type="checkbox" name="everyt"> Everything ($40)</div>
+									
+								</div>
+								<!-- <div class="row 50%">
+									<div class="12u"><textarea name="address" placeholder="Shipping Address" rows="6"></textarea></div>
+								</div> -->
+									
+								<div class="row">
+									<div class="12u">
+										<ul class="actions">
+											<li><input type="submit" value="Sign Up and Pay" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+
+					</div>
+				</div>
+			</section>
+
+
+			<script type="text/javascript">
+
+			Stripe.setPublishableKey('pk_test_TnBNkzIo8DnEV5CwI1EVLsV3');
+
+			var stripeResponseHandler = function(status, response) {
+			      var $form = $('#payment-form');
+			      if (response.error) {
+			        // Show the errors on the form
+			        $form.find('.payment-errors').text(response.error.message);
+			        $form.find('button').prop('disabled', false);
+			      } else {
+			        // token contains id, last4, and card type
+			        var token = response.id;
+			        // Insert the token into the form so it gets submitted to the server
+			        $form.append($('<input type="hidden" name="stripeToken" />').val(token));
+			        // and re-submit
+			        $form.get(0).submit();
+			      }
+			    };
+
+
+			jQuery(function($) {
+				  $('#payment-form').submit(function(event) {
+				    var $form = $(this);
+
+				    // Disable the submit button to prevent repeated clicks
+				    $form.find('button').prop('disabled', true);
+
+				    Stripe.card.createToken($form, stripeResponseHandler);
+
+				    // Prevent the form from submitting with the default action
+				    return false;
+				  });
+				});
+
+
+			</script>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<ul class="actions">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-google-plus"><span class="label">Google+</span></a></li>
+						<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon fa-pinterest"><span class="label">Pinterest</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+
+				<!-- Menu -->
+					<ul class="menu">
+						<li>&copy; Monthly Moonshine</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
